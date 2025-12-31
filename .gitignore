@@ -1,61 +1,89 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
+##################################################
+# OS / Editor / IDE
+##################################################
 .DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+Thumbs.db
 
-# IntelliJ related
+.idea/
 *.iml
 *.ipr
 *.iws
-.idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+.vscode/
+.atom/
+.history/
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+##################################################
+# Dart / Flutter
+##################################################
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
-.pub-cache/
 .pub/
+.pub-cache/
+.packages
 /build/
+**/doc/api/
 
-# Symbolication related
-app.*.symbols
-#inside the files folder
-app.*.symbols.json
+##################################################
+# Android
+##################################################
+android/.gradle/
+android/local.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/build/
+android/**/reports/
 
-# Obfuscation related
-app.*.map.json
-# Firebase
+##################################################
+# iOS
+##################################################
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/ephemeral/
+ios/Flutter/.last_build_id
+ios/Runner.xcworkspace/
+
+##################################################
+# macOS
+##################################################
+macos/Flutter/ephemeral/
+macos/Pods/
+
+##################################################
+# Windows / Linux
+##################################################
+windows/flutter/ephemeral/
+linux/flutter/ephemeral/
+
+##################################################
+# Firebase / Secrets
+##################################################
 .firebaserc
 firebase.json
 .firebase/
 firebase-debug.log
+
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
 web/firebase-messaging-sw.js
-# Google Services
-google-services.json
-GoogleService-Info.plist
-# Firebase generated config
+
+##################################################
+# Generated Firebase files
+##################################################
 lib/firebase_options.dart
 lib/src/firebase_options.dart
 
+##################################################
+# Logs / temp
+##################################################
+*.log
+*.class
+*.swp
+*.pyc
 
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+##################################################
+# Optional (recommended for solo projects)
+##################################################
+pubspec.lock
