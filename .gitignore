@@ -35,9 +35,25 @@ migrate_working_dir/
 
 # Symbolication related
 app.*.symbols
+#inside the files folder
+app.*.symbols.json
 
 # Obfuscation related
 app.*.map.json
+# Firebase
+.firebaserc
+firebase.json
+.firebase/
+firebase-debug.log
+web/firebase-messaging-sw.js
+# Google Services
+google-services.json
+GoogleService-Info.plist
+# Firebase generated config
+lib/firebase_options.dart
+lib/src/firebase_options.dart
+
+
 
 # Android Studio will place build artifacts here
 /android/app/debug
